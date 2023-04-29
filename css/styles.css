@@ -159,15 +159,14 @@ img {
 
 
 
-/*.studio-link::after{
-contain: '';
+.studio-link::after{
+content: '';
 display: block;
 
 width: 48px;
 height: 3px;
-padding-bottom: 24px;
 background-color: #404BBF;
-}*/
+}
 
 .address {
   display: flex;
