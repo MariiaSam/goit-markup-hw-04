@@ -471,27 +471,27 @@ Customers-->*/
   align-items: center;
   gap: 24px;
 }
+.item-customers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+}
 
 .customers-link{
   display: flex;
   align-items: center;
   justify-items: center;
   color: var(--link-bgc);
-    border: 1px solid #8E8F99;
+  width: calc((100% - 120px) / 6);
+  border: 1px solid #8E8F99;
   border-radius: 4px;
 
 }
 
-.item-customers{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 168px;
-  height: 88px;
-}
-
-.item-customers:hover,
-.item-customers:focus{
+.customers-link:hover,
+.customers-link:focus{
+ color: var(--ocean-bgc-btnfocus);
   border: 1px solid var(--ocean-bgc-btnfocus)
 }
 
