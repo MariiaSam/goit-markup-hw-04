@@ -17,6 +17,7 @@
   --grey-bgc-color: #f4f4fd;
   --iris-bgc-btn: #4d5ae5;
   --ocean-bgc-btnfocus: #404bbf;
+  --link-bgc:#8E8F99;
 
   /*PORTFOLIO*/
   --portf-bordercolor: #e7e9fc;
@@ -78,6 +79,7 @@ img {
 /*HEADER*/
 
 .header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border: 1px solid #e7e9fc;
   /*outline: 2px solid blue;*/
 }
@@ -212,7 +214,7 @@ background-color: #404BBF;
     url(../images/hero/office.jpg);
   background-color: var(--secondary-bgc-color);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
 
   background-size: cover;
 
@@ -348,7 +350,7 @@ justify-content: center;
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -397,7 +399,7 @@ justify-content: center;
 }
 
 .name-team {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .subtitle-section-three {
@@ -419,7 +421,6 @@ justify-content: center;
   gap: 24px;
   
 }
-
 .networks-item{
 display: flex;
 justify-content: center;
@@ -427,14 +428,20 @@ align-items: center;
 
 width: 40px;
 height: 40px ;
-
-
-background-color: var(--iris-bgc-btn);
-border-radius: 50%;
 }
 
-.networks-item:hover,
-.networks-item:focus{
+.networks-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background-color: var(--iris-bgc-btn);
+ border-radius: 50%;
+}
+
+
+
+.networks-link:hover,
+.networks-link:focus{
   background-color: var(--focus-nav-color);
 }
 
@@ -465,16 +472,22 @@ Customers-->*/
   gap: 24px;
 }
 
+.customers-link{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: var(--link-bgc);
+    border: 1px solid #8E8F99;
+  border-radius: 4px;
+
+}
+
 .item-customers{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 168px;
   height: 88px;
-
-
-  border: 1px solid #8E8F99;
-  border-radius: 4px;
 }
 
 .item-customers:hover,
@@ -501,6 +514,7 @@ fill: #8E8F99;
 
 .footer-container{
 display: flex;
+align-items: baseline;
 } 
 
 .logo-footer{
@@ -552,12 +566,19 @@ align-items: center;
 width: 40px;
 height: 40px;
 
+
+}
+
+.networks-footer-link{
+display: flex;
+align-items: center;
+justify-content: center;
 background-color: var(--iris-bgc-btn);
 border-radius: 50%;
 }
 
-.item-footer:hover,
-.item-footer:focus{
+.networks-footer-link:hover,
+.networks-footer-link:focus{
   background-color: #31D0AA;
 }
 
