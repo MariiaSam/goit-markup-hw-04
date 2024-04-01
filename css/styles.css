@@ -161,6 +161,7 @@ img {
 }
 
 /*.studio-link::after{
+  display: inline-block;
 content: '';
 display: block;
 width: 48px;
